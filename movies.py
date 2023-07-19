@@ -65,10 +65,3 @@ def Recommender(movie_name, data = mat_movies_users, model = model_knn, n_recomm
     df = df.iloc[::-1]
     print(df)
     return df
-
-
-
-df  = Recommender("Batman Forever")
-
-for movie in df["Title"]:
-    print(movie)
