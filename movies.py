@@ -6,9 +6,9 @@ plt.style.use('seaborn-bright')
 from sklearn.neighbors import NearestNeighbors
 from fuzzywuzzy import process
 
-ratings_data = pd.read_csv(r"movies/ratings_small.csv")
+ratings_data = pd.read_csv(r"ratings_small.csv")
 ratings_data = ratings_data.drop('timestamp', axis = 1)
-movie_names = pd.read_csv(r"movies/movies_metadata.csv")
+movie_names = pd.read_csv(r"movies_metadata.csv")
 movie_names = movie_names[['title', 'genres']]
 
 
