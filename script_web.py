@@ -7,7 +7,7 @@ from movies import Recommender
 
 
 
-st.title('Movie recomnder')
+st.title('Movie recommender')
 
 st.text_input("Insert the name of the movie you want a suggestion for", key="movie_name")
 st.write("Movie suggestions")
