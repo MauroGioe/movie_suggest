@@ -30,7 +30,7 @@ movie_data.groupby('title')['rating'].mean().sort_values(ascending=False).head(1
 
 
 
-movies_users = ratings_data.pivot(index=['userId'], columns=['movieId'], values='rating').fillna(0)
+movies_users = ratings_data.pivot(index=['movieId'], columns=['userId'], values='rating').fillna(0)
 movies_users
 
 
